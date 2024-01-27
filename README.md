@@ -1,4 +1,4 @@
-# FreeCodeCamp Curriculum Solutions
+# freeCodeCamp Curriculum Solutions
 
 ![FreeCodeCamp Logo](https://raw.githubusercontent.com/freeCodeCamp/assets/master/assets/logos/FCC-logo-white.png)
 
