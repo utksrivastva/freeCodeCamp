@@ -22,7 +22,3 @@ Feel free to explore the code, learn from it, and compare your solutions with mi
 
 The repository is organized by certification, with each certification containing subdirectories for the challenges and projects associated with it.
 
-JavaScript Algorithms and Data Structures Certification
-|-- [Basic JavaScript]
-|-- [ES6]
-|-- Regular Expressions
