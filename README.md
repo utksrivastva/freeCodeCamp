@@ -8,9 +8,6 @@ This repository contains my solutions to the challenges and projects from the Fr
 
 - [Introduction](#introduction)
 - [Directory Structure](#directory-structure)
-- [Getting Started](#getting-started)
-- [Contribution Guidelines](#contribution-guidelines)
-- [License](#license)
 
 ## Introduction
 
