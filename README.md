@@ -59,3 +59,9 @@
       console.log(sym([1, 2, 3, 3], [5, 2, 1, 4], [2, 1])); // [3, 4, 5]
       console.log(sym([1, 1, 2, 5], [2, 2, 3, 5], [3, 4, 5, 5])); // [1, 4, 5]
    ```
+
+- No repeats please
+
+        Return the number of total permutations of the provided string that don't have repeated consecutive letters. Assume that all characters in the provided string are each unique.
+      
+      For example, aab should return 2 because it has 6 total permutations (aab, aab, aba, aba, baa, baa), but only 2 of them (aba and aba) don't have the same letter (in this case a) repeating.
