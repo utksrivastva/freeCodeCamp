@@ -64,3 +64,42 @@
 
       Return the number of total permutations of the provided string that don't have repeated consecutive letters. Assume that all characters in the provided string are each unique.
       For example, aab should return 2 because it has 6 total permutations (aab, aab, aba, aba, baa, baa), but only 2 of them (aba and aba) don't have the same letter (in this case a) repeating.
+
+  ```JavaScript
+            function permutationsWithoutRepeats(str) {
+          // Count occurrences of each character
+          const charCount = {};
+          for (const char of str) {
+              charCount[char] = (charCount[char] || 0) + 1;
+          }
+          
+          // Recursive function to count valid permutations
+          function countPermutations(position, lastChar) {
+              // Base case: we've placed all characters
+              if (position === str.length) {
+                  return 1;
+              }
+              
+              let count = 0;
+              
+              // Try placing each character at the current position
+              for (const char in charCount) {
+                  // Skip if we've used all occurrences of this character
+                  // or if it's the same as the last character
+                  if (charCount[char] === 0 || char === lastChar) {
+                      continue;
+                  }
+                  
+                  // Use this character
+                  charCount[char]--;
+                  count += countPermutations(position + 1, char);
+                  // Backtrack
+                  charCount[char]++;
+              }
+              
+              return count;
+          }
+          
+          return countPermutations(0, null);
+      }
+  ```
